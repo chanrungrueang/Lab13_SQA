@@ -1,4 +1,6 @@
-import static org.junit.jupiter.api.Assertions.*;
+
+
+import static org.junit.Assert.assertEquals;
 
 import org.junit.Test;
 class DemoTest {
@@ -7,5 +9,10 @@ class DemoTest {
 	void Fizztest() {
 		String txt = fb.convert(3);
 		assertEquals("Fizz",txt);
+	}
+	@Test
+	void Buzztest() {
+		String txt = fb.convert(5);
+		assertEquals("Buzz",txt);
 	}
 }
