@@ -1,6 +1,7 @@
 import static org.junit.jupiter.api.Assertions.*;
 
-class Test {
+import org.junit.Test;
+class DemoTest {
 	FizzBuzz fb = new FizzBuzz();
 	@Test
 	void Fizztest() {
