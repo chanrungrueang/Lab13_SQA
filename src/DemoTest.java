@@ -20,4 +20,9 @@ class DemoTest {
 		String txt = fb.convert(15);
 		assertEquals("FizzBuzz",txt);
 	}
+	@Test
+	void inttest() {
+		String txt = fb.convert(1);
+		assertEquals("1",txt);
+	}
 }
