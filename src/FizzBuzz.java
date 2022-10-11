@@ -1,5 +1,5 @@
 public class FizzBuzz {
-    public String convert(){
+    public String convert(int i){
         return "Frizz";
     }
 }
