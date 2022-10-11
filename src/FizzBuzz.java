@@ -6,8 +6,12 @@ public class FizzBuzz {
         else if (i%5==0){
             return "Bizz";
         }
-        else{
+        else if (i%3==0 && i%5==0){
             return "FizzBizz";
+        }
+        else{
+            String s=Integer.toString(i);
+            return s;
         }
     }
 }
