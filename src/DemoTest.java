@@ -15,4 +15,9 @@ class DemoTest {
 		String txt = fb.convert(5);
 		assertEquals("Buzz",txt);
 	}
+	@Test
+	void FizzBuzztest() {
+		String txt = fb.convert(15);
+		assertEquals("FizzBuzz",txt);
+	}
 }
