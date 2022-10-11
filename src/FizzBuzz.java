@@ -3,9 +3,11 @@ public class FizzBuzz {
         if(i%3==0){
             return "Fizz";
         }
-        else{
+        else if (i%5==0){
             return "Bizz";
         }
-        
+        else{
+            return "FizzBizz";
+        }
     }
 }
