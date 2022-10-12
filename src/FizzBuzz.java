@@ -4,10 +4,10 @@ public class FizzBuzz {
             return "Fizz";
         }
         else if (i%5==0){
-            return "Bizz";
+            return "Buzz";
         }
         else if (i%3==0 && i%5==0){
-            return "FizzBizz";
+            return "FizzBuzz";
         }
         else{
             String s=Integer.toString(i);
