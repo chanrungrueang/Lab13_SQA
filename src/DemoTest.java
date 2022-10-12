@@ -1,8 +1,9 @@
+import static org.junit.jupiter.api.Assertions.*;
 
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.CsvFileSource;
 
-import static org.junit.Assert.assertEquals;
-
-import org.junit.Test;
 class DemoTest {
 	FizzBuzz fb = new FizzBuzz();
 	@Test
@@ -25,4 +26,11 @@ class DemoTest {
 		String txt = fb.convert(1);
 		assertEquals("1",txt);
 	}
+	@ParameterizedTest
+	@CsvFileSource(files = "src/Num1-100.csv",numLinesToSkip = 1)
+	void FizzBuzzTest100(int num, String expect) {
+		assertEquals(expect, fb.convert(num));
+		
+	}
+	
 }
